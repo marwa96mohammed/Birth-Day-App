@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+
+    <!--JQuary-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.2/jquery.min.js"></script>
+
+    <!--bootstrap-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+
+  </head>
+  <body>
+    <div class="container" id="login-form">
+      <div class="row">
+        <!--first col-->
+        <div class="col lg-3"></div>
+        <!--second col-->
+        <div class="col lg-6">
+          <h1 class="text-center fst-italic mt-3">Login</h1>
+          <form class="bg-secondary-subtle p-2 m-3 rounded-3">
+            <div class="mb-3">
+              <label for="email" class="form-label">Email Adress:</label>
+              <input type="email" class="form-control" id="email" size='30' aria-describedby="emailHelp"  placeholder="example@email.com"/>
+              <p style="display:none">Please input the correct format of email!</p>
+            </div>
+            <div class="mb-3">
+              <label for="Password" class="form-label">Password:</label>
+              <input type="password" class="form-control" id="password" size='30' placeholder="Password"  />
+              <p style="display:none">Please input the correct format of password!</p>
+            </div>
+
+            <div class="d-flex justify-content-between">
+              <a href="signUp.html" class="text-decoration-none text-primary">Create New Account</a>
+              <button class="btn btn-primary button-color" id="login-btn" type="submit">
+                Log In
+              </button>
+            </div>
+          </form>
+        </div>
+        <!--end of second col-->
+        <!--third col-->
+        <div class="col lg-3"></div>
+      </div>
+    </div>
+
+
+
+
+
+    <script type="module"  src="LogIn.js"></script>
+
+  </body>
+</html>
